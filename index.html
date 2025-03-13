@@ -6,17 +6,13 @@
             window.onload = () => {
                 const audio = document.getElementById("audio");
 
-                // تنظیم صدا روی 50%
-                audio.volume = 0.5;
+                audio.volume = 0.5; // sets volume to 50%
 
-                // پخش خودکار آهنگ
-                audio.play();
+                audio.play(); // plays the audio
 
-                // فعال‌سازی میوت با دکمه Space
                 document.addEventListener("keydown", (event) => {
-                    if (event.code === 'Space') {  // وقتی که دکمه Space زده می‌شود
-                        // بررسی وضعیت میوت و تغییر آن
-                        audio.muted = !audio.muted; // تغییر وضعیت میوت
+                    if (event.code === 'Space') {  // mutes the audio
+                        audio.muted = !audio.muted;
                     }
                 });
             };
