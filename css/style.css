@@ -1,0 +1,72 @@
+.Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../assets/Background/Background.gif') no-repeat center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+.DiscordLink {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+.WebsiteLink {
+    position: absolute;
+    left: 85px;
+    bottom: 10px;
+}
+
+.ServerName {
+    top: 30%;
+    left: 20%;
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+    position: absolute; 
+}
+
+.MuteButton {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.MuteButton span {
+    font-family: 'Courier New';
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+}
+
+.ServerName img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    animation: rotateMove 10s ease-in-out infinite alternate;
+}
+
+@keyframes rotateMove {
+    0% {
+        transform: rotate(0deg) translateX(0) scale(0.8);
+    }
+    25% {
+        transform: rotate(-10deg) translateX(-30px) scale(0.8);
+    }
+    50% {
+        transform: rotate(10deg) translateX(30px) scale(0.8);
+    }
+    75% {
+        transform: rotate(-10deg) translateX(-30px) scale(0.8);
+    }
+    100% {
+        transform: rotate(10deg) translateX(30px) scale(0.8);
+    }
+}

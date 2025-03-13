@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            window.onload = () => {
+                const audio = document.getElementById("audio");
+
+                // تنظیم صدا روی 50%
+                audio.volume = 0.5;
+
+                // پخش خودکار آهنگ
+                audio.play();
+
+                // فعال‌سازی میوت با دکمه Space
+                document.addEventListener("keydown", (event) => {
+                    if (event.code === 'Space') {  // وقتی که دکمه Space زده می‌شود
+                        // بررسی وضعیت میوت و تغییر آن
+                        audio.muted = !audio.muted; // تغییر وضعیت میوت
+                    }
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <div class="Background"></div> <!--Link in CSS file-->
+        <div class="DiscordLink">
+            <a href="https://discord.gg/U2KaYu9K"><img src="assets/Icons/Discord.png"></a>
+        </div>
+        <div class="WebsiteLink">
+            <a href="https://94.183.21.106"><img src="assets/Icons/Website.png"></a>
+        </div>
+        <div class="ServerName">
+            <img src="assets/Logo/RPG_Server.png" alt="Logo">
+        </div>
+        <div class="MuteButton">
+            <img src="assets/Icons/Space.png" alt="image">
+            <span>Mute</span>
+        <div>
+            <audio id="audio" autoplay loop>
+                <source src="assets/Music/Song1.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+    </body>
+</html>
