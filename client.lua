@@ -1,4 +1,3 @@
-
 local spawn1 = false							
 
 AddEventHandler("playerSpawned", function () 	-- Wait for player to spawn
